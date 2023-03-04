@@ -21,26 +21,20 @@ app.get("/neo4j",(req,res)=>{
   const session = driver.session();
   try{
     console.log("starting session!!")
-    session.run('match(n) return n')
-    .then(result => {
-      console.log("result!",result);
-      const recordsName:any[] = result.records;
+    session.executeRead(txc=> txc.run('match(n:Person) return n').then(result=> {
+      const recordsName:any[] = result.records.map(r => r.get('n').properties.name);
       const responseData:QueryPayload = {
         payload:recordsName
       }
       res.json(responseData);
-    }).then(()=>session.close())
+    }))
  
   }catch(e){
     console.log("Query Failed!");
     session.close();
     res.status(500)
     res.render('error', { error: e })
-  }finally{
-    console.log("close session");
-  
   }
-   
 
 })
 
