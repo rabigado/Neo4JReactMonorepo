@@ -1,0 +1,17 @@
+{
+  "name": "Neo4jReactExpressMonoRepoApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private":true,
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^6.5.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "lerna run --parallel start"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
