@@ -1,0 +1,15 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   dev: true,
+0 silly argv   D: true,
+0 silly argv   globs: [ '.\\\\packages\\\\server\\' ],
+0 silly argv   lernaVersion: '6.5.1',
+0 silly argv   '$0': 'node_modules\\lerna\\dist\\cli.js',
+0 silly argv   pkg: '@types/neo4j-driver'
+0 silly argv }
+1 notice cli v6.5.1
+2 verbose rootPath C:\Project\Tutorial\Neo4jReactExpressMonoRepoApp
+3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@types%2fneo4j-driver - Not found
+3 error     at C:\Project\Tutorial\Neo4jReactExpressMonoRepoApp\node_modules\lerna\node_modules\pacote\node_modules\npm-registry-fetch\lib\check-response.js:95:15
+3 error     at processTicksAndRejections (node:internal/process/task_queues:96:5)
+3 error     at async RegistryFetcher.packument (C:\Project\Tutorial\Neo4jReactExpressMonoRepoApp\node_modules\lerna\node_modules\pacote\lib\registry.js:92:19)

@@ -1,0 +1,29 @@
+{
+  "name": "shared",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "ram taylor <rami.abigadol@gmail.com>",
+  "homepage": "https://github.com/rabigado/Neo4JReactMonorepo#readme",
+  "license": "ISC",
+  "main": "lib/shared.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabigado/Neo4JReactMonorepo.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/shared.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/rabigado/Neo4JReactMonorepo/issues"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
